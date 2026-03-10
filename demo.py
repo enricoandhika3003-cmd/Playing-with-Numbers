@@ -31,6 +31,7 @@ reversed_value = 0
 while n > 0:
     digit = n%10
     reversed_value = reversed_value*10 + digit
+    n //= 10
 
 if original_value == reversed_value:
     print(f"The number {original_value}, is a palindrome")
